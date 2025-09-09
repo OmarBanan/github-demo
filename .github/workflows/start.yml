@@ -5,7 +5,7 @@ on:
     branche: [main]
 
 jobs:
-  startup;
+  startup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
