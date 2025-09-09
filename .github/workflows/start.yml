@@ -2,7 +2,7 @@ name: Demarrage
 
 on:
   push:
-    branche: [main]
+    branches: [main]
 
 jobs:
   startup:
