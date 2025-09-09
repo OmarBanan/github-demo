@@ -16,20 +16,16 @@ jobs:
         with:
           node-version: 20
           cache: npm	
-
       - name: Install
         run: npm install
 
       - name: Build
         run: npm run build
 
-      - name: Start
-        run: npm start	
-
       - name: Start app in background
         run: |
-          nohup npm start &
-          sleep 10
+         nohup npm start &
+         sleep 10
 
       - name: Test
         run: curl -I http://localhost:3000
