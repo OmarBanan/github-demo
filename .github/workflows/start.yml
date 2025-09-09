@@ -25,3 +25,11 @@ jobs:
 
       - name: Start
         run: npm start	
+
+      - name: Start app in background
+        run: |
+          nohup npm start &
+          sleep 10
+
+      - name: Test
+        run: curl -I http://localhost:3000
